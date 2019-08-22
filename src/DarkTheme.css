@@ -1,7 +1,7 @@
 .theme-dark,
 .theme-dark .Line,
 .theme-dark .Input {
-  background: #282c34;
+  background: var(--terminal-bg-color);
   color: #abb2bf;
 }
 

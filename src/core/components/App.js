@@ -10,12 +10,15 @@ import internalCommands from '../lib/internal-commands';
 
 // this is lame, but it's a list of key.code that do stuff in the input that we _want_.
 const doStuffKeys = /^(Digit|Key|Num|Period|Semi|Comma|Slash|IntlBackslash|Backspace|Delete|Enter)/;
+const default_theme = 'dark';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.onRun = this.onRun.bind(this);
     this.triggerFocus = this.triggerFocus.bind(this);
+    //set default theme as dark
+    this.props.setTheme(default_theme);
   }
 
   async onRun(command) {
